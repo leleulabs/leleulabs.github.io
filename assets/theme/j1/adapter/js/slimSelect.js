@@ -1,0 +1,19 @@
+/*
+ # -----------------------------------------------------------------------------
+ # ~/assets/theme/j1/adapter/js/waves.js
+ # J1 Adapter for the waves module
+ #
+ # Product/Info:
+ # https://jekyll.one
+ #
+ # Copyright (C) 2023-2025 Juergen Adams
+ #
+ # J1 Template is licensed under the MIT License.
+ # For details, see: https://github.com/jekyll-one-org/j1-template/blob/main/LICENSE
+ # -----------------------------------------------------------------------------
+ # NOTE: Wave styles defind in /assets/data/panel.html, key 'wave'
+ # -----------------------------------------------------------------------------
+ #  Adapter generated: 2025-07-05 06:15:45 +0200
+ # -----------------------------------------------------------------------------
+*/
+"use strict";j1.adapter.slimSelect=(e=>{"development"===e.env||e.env;var t,s,o,n,i,a,c;return{init:i=>{$.extend({module_name:'j1.adapter.slimSelect',generated:'2025-07-05 06:15:45 +0200'},i);t=$.extend({},{enabled:!1,api_options:{showSearch:!0,searchPlaceholder:"Enter your search expression",searchText:"No results",searchingText:"Searching ...",searchHighlight:!1,closeOnSelect:!0,contentPosition:"absolute",openPosition:"auto",placeholderText:"Select an item",allowDeselect:!1,hideSelected:!1,showOptionTooltips:!1,minSelected:0,maxSelected:1,timeoutDelay:200,maxValuesShown:20,maxValuesMessage:"{number} selected"}}),s=$.extend({},{enabled:!1,selects:[{select:"icon_library",enabled:!1,wrapper_id:"icon_library_select_wrapper",id:"icon_library",name:"icon-library",items:"<select id=\"icon_library\" name=\"icon-library\">\n  <optgroup label=\"Material Design Icons (MDI)\">\n    <option value=\"mdi-icons-base\"        data-css=\"/assets/theme/j1/core/css/icon-fonts/mdib.min.css\" selected=\"selected\">MDI Icons Base</option>\n    <option value=\"mdi-icons-light\"       data-css=\"/assets/theme/j1/core/css/icon-fonts/mdil.min.css\">MDI Icons Light</option>\n    <option value=\"mdi-icons-regular\"     data-css=\"/assets/theme/j1/core/css/icon-fonts/mdi.min.css\">MDI Icons Regular</option>\n  </optgroup>\n\n  <optgroup label=\"Font Awesome Icons (FA)\">\n    <option value=\"font-awesome\"          data-css=\"/assets/theme/j1/core/css/icon-fonts/fontawesome.min.css\">FA Icons (all)</option>\n    <option value=\"font-awesome-solid\"    data-css=\"/assets/theme/j1/core/css/icon-fonts/fontawesome.min.css\">FA Icons Solid</option>\n    <option value=\"font-awesome-regular\"  data-css=\"/assets/theme/j1/core/css/icon-fonts/fontawesome.min.css\">FA Icons Regular</option>\n    <option value=\"font-awesome-brands\"   data-css=\"/assets/theme/j1/core/css/icon-fonts/fontawesome.min.css\">FA Icons Brands</option>\n  </optgroup>\n</select>\n"},{select:"prompt_history",enabled:!1,wrapper_id:"prompt_history_select_wrapper",id:"prompt_history",name:"prompt-history",items:"<select multiple=\"\" id=\"prompt_history\" name=\"prompt-history\"></select>"},{select:"search_history",enabled:!1,wrapper_id:"search_history_select_wrapper",id:"search_history",name:"search-history",items:"<select multiple=\"\" id=\"search_history\" name=\"search-history\"></select>"}]}),$.extend(!0,{},t,s),o=e.adapter.slimSelect,n=log4javascript.getLogger('j1.adapter.slimSelect'),o.select={},o.selectHTML={};var r=setInterval(()=>{$('#content').css("display");if('finished'===e.getState()){a=Date.now(),o.setState('started'),n.debug('set module state to: '+o.getState()),n.info('initializing module: started');o.setState('finished'),n.debug('state: '+o.getState()),n.info('initializing module: finished'),c=Date.now(),n.info('module initializing time: '+(c-a)+'ms'),clearInterval(r)}},10)},messageHandler:(e,t)=>{var s=JSON.stringify(t,undefined,2);return i='received message from '+e+': '+s,n.debug(i),'command'===t.type&&'module_initialized'===t.action&&n.info(t.text),!0},setState:e=>{o.state=e},getState:()=>o.state}})(j1,window);
