@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>videojs-persist Demo</title>
+  <link href="../../../../css/videojs.css" rel="stylesheet">
+  
+</head>
+<body>
+  <video id="videojs-persist-player" class="video-js vjs-default-skin" controls>
+    <source src="//vjs.zencdn.net/v/oceans.mp4" type='video/mp4'>
+    <source src="//vjs.zencdn.net/v/oceans.webm" type='video/webm'>
+  </video>
+  <script src="../../../../js/video.js"></script>
+  <script src="../js/videojs-persist.js"></script>
+  <script>
+    (function(window, videojs) {
+      var examplePlayer = window.examplePlayer = videojs('videojs-persist-player', {
+        playbackRates: [1, 2]
+      });
+      var persist = window.persist = examplePlayer.persist({muted: false});
+    }(window, window.videojs));
+  </script>
+</body>
+</html>
