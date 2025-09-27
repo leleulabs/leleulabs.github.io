@@ -42,7 +42,7 @@
 <meta name="twitter:site" content="http://localhost:22000/pages/public/tour/video_data/">
 <meta name="twitter:creator" content="@Juergen Adams">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Juergen Adams","url":"https://jekyll.one/"},"dateModified":"2025-07-14T02:54:05+02:00","datePublished":"2020-11-04T00:00:00+02:00","description":"J1 Template provides playing video on web pages by HTML5 Video and supports custom players created by VidoeJS to playback video individually.","headline":"Video","image":{"width":1920,"height":1280,"url":"http://localhost:22000/assets/image/module/attic/1920x1280/alexander-shatov.jpg","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:22000/pages/public/tour/video_data/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:22000/assets/images/icon/leleulabs/j1-512x512.png"},"name":"Juergen Adams"},"url":"http://localhost:22000/pages/public/tour/video_data/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Juergen Adams","url":"https://jekyll.one/"},"dateModified":"2025-09-27T03:38:23+02:00","datePublished":"2020-11-04T00:00:00+02:00","description":"J1 Template provides playing video on web pages by HTML5 Video and supports custom players created by VidoeJS to playback video individually.","headline":"Video","image":{"width":1920,"height":1280,"url":"http://localhost:22000/assets/image/module/attic/1920x1280/alexander-shatov.jpg","@type":"imageObject"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:22000/pages/public/tour/video_data/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:22000/assets/images/icon/leleulabs/j1-512x512.png"},"name":"Juergen Adams"},"url":"http://localhost:22000/pages/public/tour/video_data/"}</script>
              <link rel="stylesheet" href="/assets/theme/j1/core/css/themes/unolight/bootstrap.min.css"> 
              <link rel="stylesheet" href="/assets/theme/j1/core/css/icon-fonts/mdib.min.css"> 
              <link rel="stylesheet" href="/assets/theme/j1/core/css/icon-fonts/fontawesome.min.css"> 
@@ -67,8 +67,6 @@
              <script defer  src="/assets/theme/j1/modules/mmenuLight/js/mmenu.min.js"></script> 
                       <script   src="/assets/theme/j1/adapter/js/themes.js"></script>
                       <script   src="/assets/theme/j1/adapter/js/toccer.js"></script>
-                      <script   src="/assets/theme/j1/adapter/js/cookieConsent.js"></script>
-             <script   src="/assets/theme/j1/modules/cookieConsent/js/cookieConsent.min.js"></script> 
              <link rel="stylesheet" href="/assets/theme/j1/modules/lunr/css/theme/uno.min.css"> 
                       <script   src="/assets/theme/j1/adapter/js/lunr.js"></script>
              <script   src="/assets/theme/j1/modules/lunr/js/lunr.min.js"></script> 
@@ -304,7 +302,7 @@ on web pages.</p>
         <div class="videojs-player bottom mb-5">
           <div class="video-title"> <i class="mdib mdib-video mdib-24px mr-2"></i> Peck Pocketed · Local Video over VideoJS </div>
           <video
-            id="y2nf1LhZsEt"
+            id="4l7iOi0AKqW"
             class="video-js vjs-theme-uno"
             controls
             width="640" height="360"
@@ -355,12 +353,12 @@ on web pages.</p>
               var pageVisible     = (pageState == 'block') ? true : false;
               var j1CoreFinished  = (j1.getState() === 'finished') ? true : false;
               if (j1CoreFinished && pageVisible) {
-                var vjs_player    = document.getElementById("y2nf1LhZsEt");
+                var vjs_player    = document.getElementById("4l7iOi0AKqW");
                 var appliedOnce   = false;
                 if ('true' === 'true') {
                   addCaptionAfterImage('/assets/video/poster/html5/peck_pocketed.jpg');
                 }
-                videojs("y2nf1LhZsEt").ready(function() {
+                videojs("4l7iOi0AKqW").ready(function() {
                   var vjsPlayer = this;
                   const customProgressContainer = vjsPlayer.controlBar.addChild('Component', {
                     el: videojs.dom.createEl('div', {
@@ -440,9 +438,9 @@ on web pages.</p>
                     }
                   });
                 });
-                var vjs_player = document.getElementById("y2nf1LhZsEt");
+                var vjs_player = document.getElementById("4l7iOi0AKqW");
                 vjs_player.addEventListener('click', function(event) {
-                  const targetDiv         = document.getElementById("y2nf1LhZsEt");
+                  const targetDiv         = document.getElementById("4l7iOi0AKqW");
                   const targetDivPosition = targetDiv.offsetTop;
                   var scrollOffset        = (window.innerWidth >= 720) ? -130 : -110;
                   window.scrollTo(0, targetDivPosition + scrollOffset);
@@ -468,7 +466,7 @@ captivating narratives.</p>
         <div class="youtube-player bottom mb-4">
           <div class="video-title"> <i class="mdib mdib-video mdib-24px mr-2"></i> Sky Elements · AGT 2024 </div>
           <video
-            id="I55KVZt8Nz4"
+            id="o9vR4gewS9B"
             class="video-js vjs-theme-uno"
             controls
             width="640" height="360"
@@ -522,13 +520,13 @@ captivating narratives.</p>
               var pageVisible    = (pageState == 'block') ? true : false;
               var j1CoreFinished = (j1.getState() === 'finished') ? true : false;
               if (j1CoreFinished && pageVisible) {
-                var vjs_player   = document.getElementById("I55KVZt8Nz4");
+                var vjs_player   = document.getElementById("o9vR4gewS9B");
                 var appliedOnce  = false;
                 if ('true' === 'true') {
                   addCaptionAfterImage('//img.youtube.com/vi/cN8IrZUhPtc/maxresdefault.jpg');
                 }
                 vjs_player.addEventListener('click', function(event) {
-                  const targetDiv         = document.getElementById("I55KVZt8Nz4");
+                  const targetDiv         = document.getElementById("o9vR4gewS9B");
                   const targetDivPosition = targetDiv.offsetTop;
                   var scrollOffset        = (window.innerWidth >= 720) ? -130 : -110;
                   window.scrollTo(0, targetDivPosition + scrollOffset);
@@ -537,10 +535,10 @@ captivating narratives.</p>
               }
             }, 10);
             var dependencies_met_vjs_player_exist = setInterval (function (options) {
-              var vjsPlayerExist          = document.getElementById("I55KVZt8Nz4") ? true : false;
+              var vjsPlayerExist          = document.getElementById("o9vR4gewS9B") ? true : false;
               var vjsPlayerCustomButtons  = ("true" === 'true') ? true : false;
               if (vjsPlayerExist && vjsPlayerCustomButtons) {
-                videojs("I55KVZt8Nz4").ready(function() {
+                videojs("o9vR4gewS9B").ready(function() {
                   const vjsPlayer   = this;
                   const customProgressContainer = vjsPlayer.controlBar.addChild('Component', {
                     el: videojs.dom.createEl('div', {
@@ -863,11 +861,6 @@ responsive websites.</p>
           $(function() {
                 var settings = $.extend({}, {"collapseDepth" : 3}, {"layout": "page", "title": "Video", "tagline": "J1 Video Apps", "scrollbar": "false", "toc": "true", "comments": "false"});
                 j1.adapter.toccer.init (settings);
-           });
-        </script>
-        <script>
-          $(function() {
-                  j1.adapter.cookieConsent.init();
            });
         </script>
         <script>
